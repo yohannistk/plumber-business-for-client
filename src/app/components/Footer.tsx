@@ -3,6 +3,8 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Separator } from './ui/separator';
 import { Badge } from './ui/badge';
+import {buisnessDetails} from "./data/businessData"
+
 import {
   Wrench,
   Phone,
@@ -27,14 +29,7 @@ const Footer = () => {
       'Bathroom Remodel',
       'Pipe Installation'
     ],
-    company: [
-      'About Us',
-      'Our Team',
-      'Careers',
-      'Reviews',
-      'Service Areas',
-      'Contact'
-    ],
+
     resources: [
       'FAQ',
       'Blog & Tips',
@@ -57,7 +52,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-12">
-          <div className="grid lg:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-4">
@@ -88,15 +83,15 @@ const Footer = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>(555) 123-4567</span>
+                  <span>{buisnessDetails.buisnessPrimaryPhone}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary" />
-                  <span>info@aquafixpro.com</span>
+                  <span>{buisnessDetails.buisnessEmail}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>123 Plumber St, City, ST</span>
+                  <span>{buisnessDetails.location}</span>
                 </div>
               </div>
             </div>
@@ -109,20 +104,6 @@ const Footer = () => {
                   <li key={index}>
                     <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
                       {service}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2">
-                {footerLinks.company.map((item, index) => (
-                  <li key={index}>
-                    <button className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      {item}
                     </button>
                   </li>
                 ))}
@@ -166,7 +147,7 @@ const Footer = () => {
         <div className="py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-muted-foreground">
-              <div>© 2024 AquaFix Pro. All rights reserved.</div>
+              <div>© 2025 {buisnessDetails.buisnessName}. All rights reserved.</div>
               <div className="flex items-center gap-4">
                 <button className="hover:text-primary transition-colors">Privacy Policy</button>
                 <button className="hover:text-primary transition-colors">Terms of Service</button>

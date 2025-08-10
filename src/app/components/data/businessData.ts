@@ -9,6 +9,16 @@ import {
   Star
 } from 'lucide-react';
 
+
+
+export const buisnessDetails = {
+  buisnessName : 'Paradiso Mec',
+  buisnessPrimaryPhone : '(206) 251-6854',
+  buisnessEmail : 'support@paradiso.com',
+  location : '2609 2nd Ave, Seattle, WA 98121, United States'
+
+}
+
 export const contactInfo = [
   {
     icon: Phone,

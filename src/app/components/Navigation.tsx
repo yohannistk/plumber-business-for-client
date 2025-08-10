@@ -6,7 +6,7 @@ import { Switch } from './ui/switch';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { useTheme } from './ThemeProvider';
 import { Menu, Moon, Sun, Phone, Wrench } from 'lucide-react';
-
+import {buisnessDetails} from "./data/businessData"
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -43,7 +43,7 @@ const Navigation = () => {
       <div className="bg-red-600 text-white py-2 px-4 text-center animate-pulse-glow">
         <div className="flex items-center justify-center gap-2 max-w-6xl mx-auto">
           <Phone className="w-4 h-4" />
-          <span className="text-sm">24/7 Emergency Plumbing Service - Call Now: (555) 123-4567</span>
+          <span className="text-sm">24/7 Emergency Plumbing Service - Call Now: {buisnessDetails.buisnessPrimaryPhone} </span>
         </div>
       </div>
 
@@ -59,7 +59,7 @@ const Navigation = () => {
                 <Wrench className="w-6 h-6" />
               </div>
               <div>
-                <h1 className="text-lg font-bold text-foreground">AquaFix Pro</h1>
+                <h1 className="text-lg font-bold text-foreground">{buisnessDetails.buisnessName}</h1>
                 <p className="text-xs text-muted-foreground">Licensed & Insured</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ const Navigation = () => {
                 <Switch
                   checked={theme === 'dark'}
                   onCheckedChange={toggleTheme}
-                  className="data-[state=checked]:bg-primary"
+                  className="bg-primary"
                 />
                 <Moon className="w-4 h-4 text-muted-foreground" />
               </div>

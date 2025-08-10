@@ -12,6 +12,9 @@ import { Calendar } from './ui/calendar';
 import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
 import { Badge } from './ui/badge';
 import { toast } from 'sonner';
+import {buisnessDetails} from "./data/businessData"
+import {formatPhoneNumber} from '@/lib/utils'
+
 import { 
   Calendar as CalendarIcon, 
   Clock, 
@@ -114,11 +117,11 @@ const BookingSection = () => {
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <div className="text-2xl font-bold text-red-700 dark:text-red-300">
-                (555) 123-4567
+                {buisnessDetails.buisnessPrimaryPhone}
               </div>
               <Button 
                 className="w-full bg-red-600 hover:bg-red-700 text-white"
-                onClick={() => window.open('tel:+15551234567')}
+                onClick={() => window.open(formatPhoneNumber(buisnessDetails.buisnessPrimaryPhone))}
               >
                 <Phone className="w-4 h-4 mr-2" />
                 Call Emergency Line

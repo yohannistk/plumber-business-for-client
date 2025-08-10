@@ -41,42 +41,6 @@ const PortfolioSection = () => {
       testimonial: 'AquaFix Pro transformed our outdated bathroom into a modern masterpiece. The team was professional and clean.'
     },
     {
-      id: 2,
-      title: 'Emergency Water Heater Replacement',
-      category: 'Water Heater',
-      location: 'Suburban Home',
-      duration: '4 hours',
-      cost: '$1,200',
-      rating: 5,
-      description: 'Emergency replacement of failed water heater with new energy-efficient tankless system.',
-      beforeImage: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500&h=300&fit=crop',
-      afterImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=300&fit=crop',
-      images: [
-        'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop'
-      ],
-      client: 'Mike R.',
-      testimonial: 'Quick response during our emergency. New tankless system is amazing and saves space!'
-    },
-    {
-      id: 3,
-      title: 'Kitchen Sink & Plumbing Upgrade',
-      category: 'Kitchen Remodel',
-      location: 'Modern Kitchen',
-      duration: '1 day',
-      cost: '$800',
-      rating: 5,
-      description: 'Installation of new kitchen sink with garbage disposal and updated supply lines.',
-      beforeImage: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=300&fit=crop',
-      afterImage: 'https://images.unsplash.com/photo-1556909011-f9301dcb9a6c?w=500&h=300&fit=crop',
-      images: [
-        'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1556909011-f9301dcb9a6c?w=800&h=600&fit=crop'
-      ],
-      client: 'Jennifer L.',
-      testimonial: 'Beautiful installation and the new disposal works perfectly. Very satisfied with the service.'
-    },
-    {
       id: 4,
       title: 'Pipe Leak Repair & Prevention',
       category: 'Leak Repair',
@@ -94,24 +58,7 @@ const PortfolioSection = () => {
       client: 'David Corp.',
       testimonial: 'Professional handling of our commercial leak issue. No disruption to business operations.'
     },
-    {
-      id: 5,
-      title: 'Drain Cleaning & Maintenance',
-      category: 'Drain Service',
-      location: 'Family Home',
-      duration: '3 hours',
-      cost: '$150',
-      rating: 5,
-      description: 'Complete drain system cleaning with video inspection and preventive maintenance recommendations.',
-      beforeImage: 'https://images.unsplash.com/photo-1558594043-b8b9d6ed1b74?w=500&h=300&fit=crop',
-      afterImage: 'https://images.unsplash.com/photo-1558594043-b8b9d6ed1b74?w=500&h=300&fit=crop&brightness=1.2',
-      images: [
-        'https://images.unsplash.com/photo-1558594043-b8b9d6ed1b74?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1558594043-b8b9d6ed1b74?w=800&h=600&fit=crop&brightness=1.2'
-      ],
-      client: 'Amy T.',
-      testimonial: 'Thorough cleaning service and great advice on maintaining our drains. Highly recommend!'
-    },
+    
     {
       id: 6,
       title: 'Outdoor Spigot Installation',

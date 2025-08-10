@@ -3,6 +3,10 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import {buisnessDetails} from "./data/businessData"
+
+
+
 import { 
   Wrench, 
   Clock, 
@@ -14,6 +18,7 @@ import {
   Star,
   CheckCircle
 } from 'lucide-react';
+import { formatPhoneNumber } from '@/lib/utils';
 
 const HeroSection = () => {
   const services = [
@@ -29,6 +34,7 @@ const HeroSection = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
 
   return (
     <section id="home" className="min-h-screen bg-gradient-to-b from-background to-secondary/20 pt-24">
@@ -73,10 +79,10 @@ const HeroSection = () => {
                 variant="outline" 
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg"
-                onClick={() => window.open('tel:+15551234567')}
+                onClick={() => window.open(formatPhoneNumber(buisnessDetails.buisnessPrimaryPhone))}
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Call (555) 123-4567
+                Call {buisnessDetails.buisnessPrimaryPhone}
               </Button>
             </div>
 
