@@ -221,7 +221,7 @@ const FAQSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-white hover:bg-white text-primary hover:bg-gray-100"
                 onClick={() => {
                   const element = document.querySelector('#contact');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });

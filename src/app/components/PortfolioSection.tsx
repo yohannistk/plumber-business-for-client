@@ -5,7 +5,7 @@ import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from './ui/dialog';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import Image from 'next/image';
 import {
   ArrowLeft,
   ArrowRight,
@@ -144,7 +144,7 @@ const PortfolioSection = () => {
                     <Badge className="absolute top-2 left-2 z-10 bg-red-100 text-red-700 border-red-200">
                       Before
                     </Badge>
-                    <ImageWithFallback
+                    <Image
                       src={project.beforeImage}
                       alt={`${project.title} - Before`}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -156,7 +156,7 @@ const PortfolioSection = () => {
                     <Badge className="absolute top-2 right-2 z-10 bg-green-100 text-green-700 border-green-200">
                       After
                     </Badge>
-                    <ImageWithFallback
+                    <Image
                       src={project.afterImage}
                       alt={`${project.title} - After`}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -224,7 +224,7 @@ const PortfolioSection = () => {
                 <div className="space-y-6">
                   {/* Image Gallery */}
                   <div className="relative">
-                    <ImageWithFallback
+                    <Image
                       src={currentProject.images[currentImageIndex]}
                       alt={`${currentProject.title} - Image ${currentImageIndex + 1}`}
                       className="w-full h-96 object-cover rounded-lg"

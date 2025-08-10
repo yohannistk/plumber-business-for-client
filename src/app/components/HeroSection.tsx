@@ -2,8 +2,8 @@ import React from 'react';
 import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import {buisnessDetails} from "./data/businessData"
+import Image from 'next/image';
 
 
 
@@ -106,7 +106,7 @@ const HeroSection = () => {
           {/* Right Image */}
           <div className="relative">
             <div className="relative bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-8 animate-float">
-              <ImageWithFallback
+              <Image
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop"
                 alt="Professional plumber at work"
                 className="w-full h-auto rounded-xl shadow-2xl"

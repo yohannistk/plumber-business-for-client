@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import Image from 'next/image';
 import {
   Wrench,
   Droplets,
@@ -97,7 +97,7 @@ const ServicesSection = () => {
               )}
               
               <div className="relative overflow-hidden">
-                <ImageWithFallback
+                <Image
                   src={service.image}
                   alt={service.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"

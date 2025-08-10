@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import {
   Award,
   Users,
@@ -12,6 +11,9 @@ import {
   CheckCircle,
   Phone
 } from 'lucide-react';
+import Image from 'next/image';
+
+
 
 const AboutSection = () => {
   const stats = [
@@ -136,7 +138,7 @@ const AboutSection = () => {
           </div>
           
           <div className="relative">
-            <ImageWithFallback
+            <Image
               src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=400&fit=crop"
               alt="Plumbing professionals at work"
               className="rounded-xl shadow-2xl w-full"
@@ -165,7 +167,7 @@ const AboutSection = () => {
               <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="relative mb-6">
-                    <ImageWithFallback
+                    <Image
                       src={member.image}
                       alt={member.name}
                       className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-primary/20"

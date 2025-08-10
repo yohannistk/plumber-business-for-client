@@ -293,7 +293,7 @@ const ReviewsSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-primary"
+                className="border-white hover:bg-gray-100 text-primary"
                 onClick={() => {
                   const element = document.querySelector('#contact');
                   if (element) element.scrollIntoView({ behavior: 'smooth' });
