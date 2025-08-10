@@ -15,6 +15,8 @@ import { toast } from 'sonner';
 import {buisnessDetails} from "./data/businessData"
 import {formatPhoneNumber} from '@/lib/utils'
 
+
+
 import { 
   Calendar as CalendarIcon, 
   Clock, 
@@ -169,7 +171,7 @@ const BookingSection = () => {
                       <Input
                         id="phone"
                         type="tel"
-                        placeholder="(555) 123-4567"
+                        placeholder={buisnessDetails.buisnessPrimaryPhone}
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
                         className="pl-10"

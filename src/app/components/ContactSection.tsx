@@ -9,7 +9,7 @@ import { Textarea } from './ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Badge } from './ui/badge';
 import { toast } from 'sonner';
-import { contactInfo, serviceAreas, certifications } from './data/businessData';
+import { contactInfo, serviceAreas, certifications, buisnessDetails } from './data/businessData';
 import {
   Send,
   User,
@@ -118,7 +118,7 @@ const ContactSection = () => {
                         <Input
                           id="phone"
                           type="tel"
-                          placeholder="(555) 123-4567"
+                          placeholder={buisnessDetails.buisnessPrimaryPhone}
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
                           className="pl-10"

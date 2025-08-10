@@ -24,27 +24,27 @@ export const contactInfo = [
     icon: Phone,
     title: 'Phone Numbers',
     details: [
-      { label: 'Main Line', value: '(555) 123-4567', action: 'tel:+15551234567' },
-      { label: 'Emergency', value: '(555) 123-HELP', action: 'tel:+15551234357' },
-      { label: 'Text/SMS', value: '(555) 123-4567', action: 'sms:+15551234567' }
+      { label: 'Main Line', value: '(206) 251-6854', action: 'tel:+12062516854' },
+      { label: 'Emergency', value: '(206) 251-6854', action: 'tel:+12062516854' },
+      { label: 'Text/SMS', value: '(206) 251-6854', action: 'sms:++12062516854' }
     ]
   },
   {
     icon: Mail,
     title: 'Email Addresses',
     details: [
-      { label: 'General Inquiries', value: 'info@aquafixpro.com', action: 'mailto:info@aquafixpro.com' },
-      { label: 'Emergency Service', value: 'emergency@aquafixpro.com', action: 'mailto:emergency@aquafixpro.com' },
-      { label: 'Billing Questions', value: 'billing@aquafixpro.com', action: 'mailto:billing@aquafixpro.com' }
+      { label: 'General Inquiries', value: 'info@paradiso.com', action: 'mailto:info@paradiso.com' },
+      { label: 'Emergency Service', value: 'support@paradiso.com', action: 'mailto:support@paradiso.com' },
+      { label: 'Billing Questions', value: 'billing@support@paradiso.com', action: 'mailto:billing@support@paradiso.com' }
     ]
   },
   {
     icon: MapPin,
     title: 'Service Address',
     details: [
-      { label: 'Office Location', value: '123 Plumber Street' },
-      { label: 'City, State', value: 'Hometown, ST 12345' },
-      { label: 'Service Area', value: '30-mile radius' }
+      { label: 'Office Location', value: '2609 2nd Ave, Seattle, WA 98121, United States' },
+      // { label: 'City, State', value: 'Hometown, ST 12345' },
+      // { label: 'Service Area', value: '30-mile radius' }
     ]
   },
   {

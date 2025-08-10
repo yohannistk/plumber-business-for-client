@@ -16,6 +16,10 @@ import {
   MapPin
 } from 'lucide-react';
 
+import {buisnessDetails} from "./data/businessData"
+import { formatPhoneNumber } from '@/lib/utils';
+
+
 const FAQSection = () => {
   const faqCategories = [
     {
@@ -213,10 +217,10 @@ const FAQSection = () => {
                 variant="secondary" 
                 size="lg"
                 className="bg-white text-primary hover:bg-gray-100"
-                onClick={() => window.open('tel:+15551234567')}
+                onClick={() => window.open(formatPhoneNumber(buisnessDetails.buisnessPrimaryPhone))}
               >
                 <Phone className="w-4 h-4 mr-2" />
-                Call (555) 123-4567
+                { buisnessDetails.buisnessPrimaryPhone }
               </Button>
               <Button 
                 variant="outline" 
