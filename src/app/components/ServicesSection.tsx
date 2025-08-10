@@ -49,7 +49,7 @@ const ServicesSection = () => {
       icon: Thermometer,
       title: 'Water Heater Service',
       description: 'Installation, repair, and maintenance of all water heater types including tankless systems.',
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=250&fit=crop',
+      image: 'https://images.unsplash.com/photo-1610312973684-e47446aa260b?w=400&h=250&fit=crop',
       features: ['All Brands', 'Energy Efficient', '24/7 Service'],
       price: 'From $180'
     },
@@ -65,7 +65,7 @@ const ServicesSection = () => {
       icon: Settings,
       title: 'Drain Cleaning',
       description: 'Professional drain cleaning and maintenance to keep your plumbing flowing smoothly.',
-      image: 'https://images.unsplash.com/photo-1558594043-b8b9d6ed1b74?w=400&h=250&fit=crop',
+      image: 'https://images.unsplash.com/photo-1654440122140-f1fc995ddb34?w=400&h=250&fit=crop',
       features: ['Video Inspection', 'Hydro Jetting', 'Root Removal'],
       price: 'From $99'
     }

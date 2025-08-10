@@ -34,7 +34,7 @@ const AboutSection = () => {
     {
       name: 'Sarah Davis',
       role: 'Senior Plumber',
-      image: 'https://images.unsplash.com/photo-1594824388838-40b0bb8d5dbd?w=300&h=300&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=300&h=300&fit=crop&crop=face',
       certifications: ['Licensed Plumber', 'Water Quality Specialist', 'Green Plumbing Certified'],
       experience: '8+ Years Experience'
     },
