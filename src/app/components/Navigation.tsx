@@ -41,7 +41,7 @@ const Navigation = () => {
     <>
       {/* Emergency Banner */}
       <div className="bg-red-600 text-white py-2 px-4 text-center animate-pulse-glow">
-        <div className="flex items-center justify-center gap-2 max-w-6xl mx-auto">
+        <div className="flex items-center justify-center gap-2 max-w-7xl mx-auto">
           <Phone className="w-4 h-4" />
           <span className="text-sm">24/7 Emergency Plumbing Service - Call Now: {buisnessDetails.buisnessPrimaryPhone} </span>
         </div>
@@ -51,7 +51,7 @@ const Navigation = () => {
       <nav className={`fixed top-8 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
       }`}>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-2">

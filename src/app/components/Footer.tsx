@@ -49,7 +49,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-card border-t">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer */}
         <div className="py-12">
           <div className="grid lg:grid-cols-3 gap-8">

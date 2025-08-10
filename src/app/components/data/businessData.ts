@@ -12,7 +12,7 @@ import {
 
 
 export const buisnessDetails = {
-  buisnessName : 'Paradiso Mec',
+  buisnessName : 'Paradiso Mechanical',
   buisnessPrimaryPhone : '(206) 251-6854',
   buisnessEmail : 'support@paradiso.com',
   location : '2609 2nd Ave, Seattle, WA 98121, United States'
